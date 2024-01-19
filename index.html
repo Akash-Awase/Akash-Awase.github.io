@@ -57,6 +57,7 @@
         .moving-logo {
             font-size: 2em;
             animation: rocketLaunch 5s infinite linear;
+            display: inline-block; /* Added to fix visibility issue */
         }
 
         .clickable-square-container {
@@ -96,15 +97,15 @@
 
         @keyframes rocketLaunch {
             0% {
-                transform: translateX(-100%) rotate(90deg);
+                transform: translateX(-100%) rotate(40deg);
             }
 
             50% {
-                transform: translateX(100%) rotate(90deg);
+                transform: translateX(100%) rotate(40deg);
             }
 
             100% {
-                transform: translateX(0) rotate(90deg);
+                transform: translateX(0) rotate(40deg);
             }
         }
     </style>
@@ -114,6 +115,7 @@
 
     <header>
         <h1>Akash Awase</h1>
+        <img src="./images/myphoto.jpg" alt="Akash Awase" class="profile-image">
     </header>
 
     <div class="main-container">
@@ -124,7 +126,6 @@
         <div class="about-me-section">
             <h3>About Me</h3>
             <p>Your intriguing introduction goes here. Add a nice moving logo or emoji below:</p>
-            <div class="moving-logo">🚀</div>
         </div>
 
         <div class="interests-section">
@@ -149,6 +150,8 @@
                 <li><a href="#">Incredible Project 3</a></li>
             </ul>
         </div>
+        
+        <div class="moving-logo">🚀</div>
 
         <h3>I am also diving into</h3>
 
